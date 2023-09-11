@@ -12,6 +12,9 @@ DEVICE_PATH := device/realme/rmx3371
 # Assert
 TARGET_OTA_ASSERT_DEVICE := RMX3371,RE54E4L1
 
+# Device properties
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
