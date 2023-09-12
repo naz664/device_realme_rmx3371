@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-bliss
+    $(LOCAL_PATH)/overlay-evolution
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -70,3 +70,6 @@ $(call inherit-product, device/realme/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/realme/rmx3371/rmx3371-vendor.mk)
+
+#oppo cam
+#$(call inherit-product, vendor/realme/camera/camera-vendor.mk)
