@@ -54,16 +54,14 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-bliss
+    $(LOCAL_PATH)/overlay-evolution
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/realme/sm8250-common/common.mk)
