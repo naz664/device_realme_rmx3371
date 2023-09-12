@@ -589,4 +589,8 @@
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">false</bool>
+
 </resources>
