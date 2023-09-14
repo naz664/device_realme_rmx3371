@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_rmx3371.mk
+    $(LOCAL_DIR)/spark_rmx3371.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_rmx3371-user \
-    evolution_rmx3371-userdebug \
-    evolution_rmx3371-eng
+    spark_rmx3371-user \
+    spark_rmx3371-userdebug \
+    spark_rmx3371-eng
