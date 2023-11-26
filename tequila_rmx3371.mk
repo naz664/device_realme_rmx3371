@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rmx3371 device
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common tequila stuff.
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
 
 # Enable extra UDFPS animations
@@ -26,7 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 
 
-PRODUCT_NAME := bliss_rmx3371
+PRODUCT_NAME := tequila_rmx3371
 PRODUCT_DEVICE := rmx3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
