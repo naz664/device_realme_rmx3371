@@ -1,10 +1,4 @@
-echo "Applying Brightness patch"
+echo "Cloning tress wait"
 
-cd frameworks/base || exit 1
-if git log -150 --oneline --decorate | grep "Fix brightness slider"; then
-	echo "Fix was already applied"
-else
-	git fetch https://github.com/ArrowOS/android_frameworks_base/ ca3ffbc964826616fe3f088e4fbab3f6ca070c19 && git cherry-pick FETCH_HEAD
-fi
+git clone https://github.com/Realme-SM8250/device_realme_rmx3371.git -b A14 device/realme/rmx3371 && git clone https://github.com/Realme-SM8250/device_realme_sm8250-common.git -b A14 device/realme/sm8250-common && git clone https://github.com/Realme-SM8250/hardware_oplus.git -b A14 hardware/oplus && git clone https://github.com/Realme-SM8250/vendor_realme_rmx3371.git -b A13 vendor/realme/rmx3371 && git clone https://github.com/Realme-SM8250/vendor_realme_sm8250-common.git -b A14 vendor/realme/sm8250-common && git clone https://github.com/bibindasb/kernel_realme_rmx3371.git -b pikachu-AOSP kernel/realme/sm8250
 
-cd ../..
