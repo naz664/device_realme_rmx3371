@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tequila_rmx3371.mk
+    $(LOCAL_DIR)/lineage_rmx3371.mk
 
 COMMON_LUNCH_CHOICES := \
-    tequila_rmx3371-user \
-    tequila_rmx3371-userdebug \
-    tequila_rmx3371-eng
+    lineage_rmx3371-user \
+    lineage_rmx3371-userdebug \
+    lineage_rmx3371-eng

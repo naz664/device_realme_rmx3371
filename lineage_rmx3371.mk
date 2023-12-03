@@ -11,9 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rmx3371 device
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
-# Inherit some common tequila stuff.
-$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
-
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
@@ -24,9 +23,23 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#Matrixx Maintainer Info
+#MATRIXX_MAINTAINER := Nazim
+#MATRIXX_CHIPSET := Snapdragon®870
+#MATRIXX_BATTERY := 5000mAh
 
+# GAPPS
+#WITH_GMS :=true # this is needed to reserve partitions
+WITH_GAPPS := true
+TARGET_INCLUDE_GOOGLE_TELEPHONY := false
+TARGET_INCLUDE_PIXEL_FRAMEWORK := true
+TARGET_INCLUDE_GOOGLE_CAMERA := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_GMAIL := false
+TARGET_INCLUDE_GOOGLE_MAPS := false
 
-PRODUCT_NAME := tequila_rmx3371
+PRODUCT_NAME := lineage_rmx3371
 PRODUCT_DEVICE := rmx3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
