@@ -37,7 +37,12 @@ SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := \
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 1
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 0
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := true
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Include the proprietary files BoardConfig.
 -include vendor/realme/rmx3371/BoardConfigVendor.mk

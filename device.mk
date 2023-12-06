@@ -52,13 +52,16 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
-    
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
-
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
