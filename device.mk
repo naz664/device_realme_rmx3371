@@ -1,4 +1,4 @@
-#
+ #
 # Copyright (C) 2018 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -71,6 +71,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+    removepackages
 
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
