@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-evolution
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -71,6 +71,9 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/realme/sm8250-common/common.mk)

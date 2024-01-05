@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The evolutionOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rmx3371 device
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common evolution stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
@@ -20,20 +20,17 @@ EXTRA_UDFPS_ANIMATIONS := true
 # Enable Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+TARGET_BUILD_APERTURE_CAMERA := false
+
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# GAPPS
-WITH_GAPPS := true
-TARGET_INCLUDE_GOOGLE_TELEPHONY := false
-TARGET_INCLUDE_PIXEL_FRAMEWORK := true
-TARGET_INCLUDE_GOOGLE_CAMERA := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
+TARGET_USES_PICO_GAPPS := true
 
-PRODUCT_NAME := lineage_rmx3371
+PRODUCT_NAME := evolution_rmx3371
 PRODUCT_DEVICE := rmx3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
