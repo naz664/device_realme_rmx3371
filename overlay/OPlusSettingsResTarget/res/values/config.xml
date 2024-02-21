@@ -5,7 +5,7 @@
 -->
 <resources>
 
-    <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">75</integer>
 
 </resources>
